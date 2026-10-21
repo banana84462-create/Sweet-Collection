@@ -339,3 +339,73 @@ footer {
 .vertical-text-overlay {
 display: none !important;
 }
+
+/* Basic layout fix */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .brand-logo {
+        font-size: 2.2rem;
+    }
+
+    .hero-section {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+    .products-section {
+        padding: 30px 20px 50px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-img-box {
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .banner-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .banner-card {
+        height: 300px;
+    }
+
+    .vertical-text {
+        display: none;
+    }
+}
